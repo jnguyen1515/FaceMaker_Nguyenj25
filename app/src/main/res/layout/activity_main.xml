@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <SurfaceView
+            android:id="@+id/surfaceView1"
+            android:layout_width="match_parent"
+            android:layout_height="342dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+        </SurfaceView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Red"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/red_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255">
+
+        </SeekBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Green"
+            android:textSize="15dp">
+
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/green_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255">
+
+        </SeekBar>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Blue"
+            android:textSize="15dp">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/blue_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255">
+        </SeekBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingRight="5dp"
+                    android:text="Please choose hairstyle: ">
+                </TextView>
+
+
+                <Spinner
+                    android:id="@+id/hair_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp">
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:text="Select to customize: ">
+                </TextView>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp">
+
+                    <RadioButton
+                        android:id="@+id/hair_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hair">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/eyes_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Eyes">
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/skin_radio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Skin">
+
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Random Face">
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

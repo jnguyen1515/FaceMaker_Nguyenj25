@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">FaceMaker_NguyenJ25</string>
-    // android std website for help
+    /**External Citation
+    * Date: 10 Feb 2024
+    * Problem: I could not figure out how to print the 3 options to the spinner class
+    *
+    * Resource: https://developer.android.com/develop/ui/views/components/spinner
+    *
+    * Solution: I was able to figure out what I may need to do to help show the three options.
+    */
     <string-array name="hair_array">
         <item> Spiky Hair </item>
         <item> Shaved Hair </item>

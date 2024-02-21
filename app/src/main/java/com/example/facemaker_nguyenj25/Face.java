@@ -37,10 +37,11 @@ public class Face extends SurfaceView {
         hairStyle = randomize.nextInt();
     }
 
+
     //this is a method to draw the Face on a canvas
-    public void onDraw(Canvas canvas) {
-        canvas.drawCircle(200.0f, 300.0f, 50.0f, // color needed);
-    }
+    //public void onDraw(Canvas canvas) {
+      //  canvas.drawCircle(200.0f, 300.0f, 50.0f, ); //color needed);
+    //}
 
     //bunch of getter methods
     public int getSkinColor() {

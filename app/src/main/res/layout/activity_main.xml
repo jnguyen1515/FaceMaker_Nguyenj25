@@ -86,14 +86,16 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingRight="5dp"
-                    android:text="Please choose hairstyle: "></TextView>
+                    android:text="Please choose hairstyle: ">
+                </TextView>
 
 
                 <Spinner
                     android:id="@+id/hair_spinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp"></Spinner>
+                    android:paddingTop="10dp">
+                </Spinner>
             </LinearLayout>
 
 
@@ -107,7 +109,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
-                android:text="Select to customize: "></TextView>
+                android:text="Select to customize: ">
+            </TextView>
 
             <RadioGroup
                 android:id="@+id/group"
@@ -120,7 +123,8 @@
                     android:id="@+id/hair_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Hair"></RadioButton>
+                    android:text="Hair">
+                </RadioButton>
 
                 <RadioButton
                     android:id="@+id/eyes_radio"
@@ -146,9 +150,11 @@
             android:layout_height="match_parent">
 
             <Button
+                android:id="@+id/randomButt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Random Face"></Button>
+                android:text="Random Face">
+            </Button>
 
         </LinearLayout>
 

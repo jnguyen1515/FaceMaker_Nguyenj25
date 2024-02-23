@@ -2,10 +2,8 @@ package com.example.facemaker_nguyenj25;
 //@author James Nguyen
 
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.os.Bundle;
-
+import android.widget.Button;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.RadioButton;
@@ -14,17 +12,12 @@ import android.widget.SeekBar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Face surfaceView;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        surfaceView = findViewById(R.id.surfaceView1);
+        Face surfaceView = findViewById(R.id.surfaceView1);
         // Initialize the spinner and populate it with the hair options from resources
         Spinner spinner = findViewById(R.id.hair_spinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -34,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         // Set the adapter for the spinner
         spinner.setAdapter(adapter);
 
-
+        Button random = findViewById(R.id.randomButt);
         SeekBar rSeekbar = findViewById(R.id.red_seekbar);
         SeekBar gSeekbar = findViewById(R.id.green_seekbar);
         SeekBar bSeekbar = findViewById(R.id.blue_seekbar);
@@ -44,12 +37,16 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radioSkin = findViewById(R.id.skin_radio);
 
         ControllerClass colorControl = new ControllerClass(surfaceView, rSeekbar, gSeekbar, bSeekbar,
-                spinner, radioEyes, radioHair, radioSkin);
+                spinner, radioEyes, radioHair, radioSkin, random);
 
+        random.setOnClickListener(colorControl);
         spinner.setOnItemSelectedListener(colorControl);
         rSeekbar.setOnSeekBarChangeListener(colorControl);
         gSeekbar.setOnSeekBarChangeListener(colorControl);
         bSeekbar.setOnSeekBarChangeListener(colorControl);
+        radioHair.setOnClickListener(colorControl);
+        radioEyes.setOnClickListener(colorControl);
+        radioSkin.setOnClickListener(colorControl);
     }
 }
 

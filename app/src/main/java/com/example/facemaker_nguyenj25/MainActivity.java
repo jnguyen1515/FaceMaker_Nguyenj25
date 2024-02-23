@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.SeekBar;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
 
     @Override

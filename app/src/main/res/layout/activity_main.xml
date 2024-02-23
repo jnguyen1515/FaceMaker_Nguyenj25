@@ -15,14 +15,14 @@
         android:orientation="vertical"
         android:paddingTop="10dp">
 
-        <SurfaceView
+        <com.example.facemaker_nguyenj25.Face
             android:id="@+id/surfaceView1"
             android:layout_width="match_parent"
-            android:layout_height="342dp"
+            android:layout_height="650dp"
             android:layout_gravity="center"
             android:orientation="vertical">
 
-        </SurfaceView>
+        </com.example.facemaker_nguyenj25.Face>
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,7 +71,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="116dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -86,59 +86,59 @@
                     android:layout_height="wrap_content"
                     android:paddingTop="10dp"
                     android:paddingRight="5dp"
-                    android:text="Please choose hairstyle: ">
-                </TextView>
+                    android:text="Please choose hairstyle: "></TextView>
 
 
                 <Spinner
                     android:id="@+id/hair_spinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingTop="10dp">
-                </Spinner>
+                    android:paddingTop="10dp"></Spinner>
             </LinearLayout>
 
-            <LinearLayout
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom">
+                android:paddingTop="10dp"
+                android:text="Select to customize: "></TextView>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:text="Select to customize: ">
-                </TextView>
+            <RadioGroup
+                android:id="@+id/group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
 
-                <RadioGroup
+                <RadioButton
+                    android:id="@+id/hair_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingBottom="10dp">
+                    android:text="Hair"></RadioButton>
 
-                    <RadioButton
-                        android:id="@+id/hair_radio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hair">
-                    </RadioButton>
+                <RadioButton
+                    android:id="@+id/eyes_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Eyes">
 
-                    <RadioButton
-                        android:id="@+id/eyes_radio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Eyes">
-                    </RadioButton>
+                </RadioButton>
 
-                    <RadioButton
-                        android:id="@+id/skin_radio"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Skin">
-                    </RadioButton>
-                </RadioGroup>
+                <RadioButton
+                    android:id="@+id/skin_radio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Skin">
 
-            </LinearLayout>
+                </RadioButton>
+            </RadioGroup>
+
         </LinearLayout>
 
         <LinearLayout
@@ -147,9 +147,8 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Random Face">
-            </Button>
+                android:layout_height="wrap_content"
+                android:text="Random Face"></Button>
 
         </LinearLayout>
 

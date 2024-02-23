@@ -9,8 +9,8 @@
     * Solution: I was able to figure out what I may need to do to help show the three options.
     */
     <string-array name="hair_array">
-        <item> Spiky Hair </item>
-        <item> Shaved Hair </item>
+        <item> Bald </item>
+        <item> Block Hair </item>
         <item> Long Hair </item>
     </string-array>
 </resources>
